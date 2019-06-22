@@ -1,0 +1,27 @@
+{
+  "name": "xskit/callback-client",
+  "description": "内部 HTTP 回调系统 api-callback 的客户端契约",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Xingshun",
+      "email": "250915790@qq.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^7.1.3",
+    "xskit/laravel-rabbitmq": "~2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "XsKit\\CallbackClient\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
