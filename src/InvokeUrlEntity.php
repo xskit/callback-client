@@ -27,7 +27,7 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
 
     protected $bizId;
 
-    /** @var string */
+    /** @var InvokeUrlContract */
     protected $ackInvokeUrl;
 
     /**
@@ -112,7 +112,7 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
     }
 
     /**
-     * @return string|null
+     * @return InvokeUrlContract|null
      */
     public function ackInvokeUrl()
     {

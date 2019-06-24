@@ -9,6 +9,8 @@
 namespace XsKit\CallbackClient;
 
 
+use XsKit\CallbackClient\Contracts\InvokeUrlContract;
+
 abstract class InvokeUrlGenerator
 {
     private static $instance;
