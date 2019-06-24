@@ -46,4 +46,10 @@ interface InvokeUrlContract
      * @return mixed
      */
     public function bizId();
+
+    /**
+     * 获取请求选项
+     * @return mixed
+     */
+    public function options();
 }
