@@ -53,4 +53,18 @@ abstract class InvokeUrlGenerator
     }
 
     public abstract function getInvokeUrlEntity(): InvokeUrlEntity;
+
+    public abstract function setQuery($value);
+
+    public abstract function setParam($value);
+
+    public abstract function setMethod($value);
+
+    public abstract function setUserId($value);
+
+    public abstract function setBizId($value);
+
+    public abstract function setType($value);
+
+    public abstract function setOptions($value = []);
 }
