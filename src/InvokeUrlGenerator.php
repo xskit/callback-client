@@ -29,6 +29,8 @@ abstract class InvokeUrlGenerator
 
     protected $type;
 
+    protected $options;
+
     /**
      * @return InvokeUrlGenerator
      */

@@ -27,6 +27,8 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
 
     protected $bizId;
 
+    protected $options;
+
     /** @var InvokeUrlContract */
     protected $ackInvokeUrl;
 
@@ -39,7 +41,7 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
      * @param null $bizId 业务ID
      * @param int $type 业务类型
      */
-    public function __construct($query, $body = [], $method = 'POST', $userId = null, $bizId = null, $type = null)
+    public function __construct($query, $body = [], $method = 'POST', $userId = null, $bizId = null, $type = null, $options = [])
     {
         $this->query = $query;
         $this->body = $body;
@@ -47,6 +49,7 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
         $this->userId = $userId;
         $this->bizId = $bizId;
         $this->type = $type;
+        $this->options = $options;
     }
 
     /**
@@ -117,5 +120,10 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
     public function ackInvokeUrl()
     {
         return $this->ackInvokeUrl;
+    }
+
+    public function options()
+    {
+        return $this->options;
     }
 }
