@@ -58,15 +58,15 @@ abstract class InvokeUrlGenerator
 
     public abstract function setQuery($value);
 
-    public abstract function setParam($value);
+    public abstract function setParam(array $value);
 
-    public abstract function setMethod($value);
+    public abstract function setMethod(string $value);
 
     public abstract function setUserId($value);
 
     public abstract function setBizId($value);
 
-    public abstract function setType($value);
+    public abstract function setType(int $value);
 
-    public abstract function setOptions($value = []);
+    public abstract function setOptions(array $value = []);
 }
