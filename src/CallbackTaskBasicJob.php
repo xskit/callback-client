@@ -42,9 +42,6 @@ class CallbackTaskBasicJob extends PublishJobContract
      */
     public function __construct(InvokeUrlGenerator $urlGenerator)
     {
-        $this->connection = 'rabbitmq';
-
-        $this->query = 'api_callback.client';
 
         $invokeUrl = $urlGenerator->getInvokeUrlEntity();
 
