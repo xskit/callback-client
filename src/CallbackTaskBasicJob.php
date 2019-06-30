@@ -9,6 +9,7 @@
 namespace XsKit\CallbackClient;
 
 use XsKit\CallbackClient\Contracts\AckUrlContract;
+use XsKit\CallbackClient\Contracts\InvokeUrlContract;
 use XsKit\LaravelRabbitMQ\Contracts\PublishJobContract;
 
 /**
@@ -31,8 +32,10 @@ class CallbackTaskBasicJob extends PublishJobContract
 
     public $bizId;
 
+    public $options;
+
     /**
-     * @var string
+     * @var InvokeUrlContract
      */
     public $ackInvokeUrl;
 
@@ -56,6 +59,8 @@ class CallbackTaskBasicJob extends PublishJobContract
         $this->bizId = $invokeUrl->bizId();
 
         $this->userId = $invokeUrl->userId();
+
+        $this->options = $invokeUrl->options();
 
         if ($invokeUrl instanceof AckUrlContract) {
             $this->ackInvokeUrl = $invokeUrl->ackInvokeUrl();
