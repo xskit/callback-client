@@ -9,7 +9,7 @@
 namespace XsKit\CallbackClient\Contracts;
 
 
-interface InvokeUrlContract
+interface InvokeUrlEntityContract
 {
     /**
      * 回调请求方式,默认 POST
@@ -49,7 +49,7 @@ interface InvokeUrlContract
 
     /**
      * 获取请求选项
-     * @return mixed
+     * @return array
      */
-    public function options();
+    public function options(): array;
 }

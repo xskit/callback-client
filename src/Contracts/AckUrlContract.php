@@ -16,7 +16,7 @@ namespace XsKit\CallbackClient\Contracts;
 interface AckUrlContract
 {
     /**
-     * @return InvokeUrlContract|null
+     * @return InvokeUrlEntityContract|null
      */
-    public function ackInvokeUrl();
+    public function ackInvokeUrl(): ?InvokeUrlEntityContract;
 }

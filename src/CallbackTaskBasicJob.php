@@ -9,7 +9,7 @@
 namespace XsKit\CallbackClient;
 
 use XsKit\CallbackClient\Contracts\AckUrlContract;
-use XsKit\CallbackClient\Contracts\InvokeUrlContract;
+use XsKit\CallbackClient\Contracts\InvokeUrlEntityContract;
 use XsKit\LaravelRabbitMQ\Contracts\PublishJobContract;
 
 /**
@@ -35,7 +35,7 @@ class CallbackTaskBasicJob extends PublishJobContract
     public $options;
 
     /**
-     * @var InvokeUrlContract
+     * @var InvokeUrlEntityContract
      */
     public $ackInvokeUrl;
 

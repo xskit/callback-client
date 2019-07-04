@@ -10,9 +10,9 @@ namespace XsKit\CallbackClient;
 
 
 use XsKit\CallbackClient\Contracts\AckUrlContract;
-use XsKit\CallbackClient\Contracts\InvokeUrlContract;
+use XsKit\CallbackClient\Contracts\InvokeUrlEntityContract;
 
-class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
+class InvokeUrlEntityEntity implements InvokeUrlEntityContract, AckUrlContract
 {
 
     protected $method;
@@ -29,7 +29,7 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
 
     protected $options;
 
-    /** @var InvokeUrlContract */
+    /** @var InvokeUrlEntityContract */
     protected $ackInvokeUrl;
 
     /**
@@ -54,10 +54,10 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
 
     /**
      * 设置应答回执
-     * @param InvokeUrlContract $invokeUrl
+     * @param InvokeUrlEntityContract $invokeUrl
      * @return $this
      */
-    public function setAckInvokeUrl(InvokeUrlContract $invokeUrl)
+    public function setAckInvokeUrl(InvokeUrlEntityContract $invokeUrl)
     {
         $this->ackInvokeUrl = $invokeUrl;
 
@@ -115,14 +115,17 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
     }
 
     /**
-     * @return InvokeUrlContract|null
+     * @return InvokeUrlEntityContract|null
      */
-    public function ackInvokeUrl()
+    public function ackInvokeUrl(): ?InvokeUrlEntityContract
     {
         return $this->ackInvokeUrl;
     }
 
-    public function options()
+    /**
+     * @return array|mixed
+     */
+    public function options(): array
     {
         return $this->options;
     }

@@ -1,6 +1,6 @@
 {
-  "name": "xskit/callback-client",
-  "description": "内部 HTTP 回调系统 api-callback 的客户端契约",
+  "name": "xskit/callback-contract",
+  "description": "内部 HTTP 回调系统的契约",
   "type": "library",
   "license": "MIT",
   "authors": [

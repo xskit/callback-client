@@ -9,7 +9,7 @@
 namespace XsKit\CallbackClient;
 
 
-use XsKit\CallbackClient\Contracts\InvokeUrlContract;
+use XsKit\CallbackClient\Contracts\InvokeUrlEntityContract;
 
 abstract class InvokeUrlGenerator
 {
@@ -44,17 +44,17 @@ abstract class InvokeUrlGenerator
 
     /**
      * 设置应答回执
-     * @param InvokeUrlContract $invokeUrl
+     * @param InvokeUrlEntityContract $invokeUrl
      * @return $this
      */
-    public function setAckInvokeUrl(InvokeUrlContract $invokeUrl)
+    public function setAckInvokeUrl(InvokeUrlEntityContract $invokeUrl)
     {
         $this->ackInvokeUrl = $invokeUrl;
 
         return $this;
     }
 
-    public abstract function getInvokeUrlEntity(): InvokeUrlEntity;
+    public abstract function getInvokeUrlEntity(): InvokeUrlEntityEntity;
 
     public abstract function setQuery($value);
 
