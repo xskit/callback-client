@@ -54,7 +54,7 @@ abstract class InvokeUrlGenerator
         return $this;
     }
 
-    public abstract function getInvokeUrlEntity(): InvokeUrlEntityEntity;
+    public abstract function getInvokeUrlEntity(): InvokeUrlEntity;
 
     public abstract function setQuery($value);
 

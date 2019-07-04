@@ -8,8 +8,8 @@
 
 namespace XsKit\Callback;
 
-use XsKit\CallbackClient\Contracts\AckUrlContract;
-use XsKit\CallbackClient\Contracts\InvokeUrlEntityContract;
+use XsKit\Callback\Contracts\AckUrlContract;
+use XsKit\Callback\Contracts\InvokeUrlEntityContract;
 use XsKit\LaravelRabbitMQ\Contracts\PublishJobContract;
 
 /**

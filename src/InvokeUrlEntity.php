@@ -9,10 +9,10 @@
 namespace XsKit\Callback;
 
 
-use XsKit\CallbackClient\Contracts\AckUrlContract;
-use XsKit\CallbackClient\Contracts\InvokeUrlEntityContract;
+use XsKit\Callback\Contracts\AckUrlContract;
+use XsKit\Callback\Contracts\InvokeUrlEntityContract;
 
-class InvokeUrlEntityEntity implements InvokeUrlEntityContract, AckUrlContract
+class InvokeUrlEntity implements InvokeUrlEntityContract, AckUrlContract
 {
 
     protected $method;
