@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "XsKit\\CallbackClient\\": "src/"
+      "XsKit\\Callback\\": "src/"
     }
   },
   "extra": {

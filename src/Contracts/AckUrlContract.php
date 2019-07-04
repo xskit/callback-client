@@ -6,7 +6,7 @@
  * Time: 17:35
  */
 
-namespace XsKit\CallbackClient\Contracts;
+namespace XsKit\Callback\Contracts;
 
 /**
  * 回调确认

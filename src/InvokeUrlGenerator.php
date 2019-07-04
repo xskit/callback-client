@@ -6,10 +6,10 @@
  * Time: 17:34
  */
 
-namespace XsKit\CallbackClient;
+namespace XsKit\Callback;
 
 
-use XsKit\CallbackClient\Contracts\InvokeUrlEntityContract;
+use XsKit\Callback\Contracts\InvokeUrlEntityContract;
 
 abstract class InvokeUrlGenerator
 {

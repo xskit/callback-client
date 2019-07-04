@@ -6,7 +6,7 @@
  * Time: 16:59
  */
 
-namespace XsKit\CallbackClient;
+namespace XsKit\Callback;
 
 
 use XsKit\CallbackClient\Contracts\AckUrlContract;

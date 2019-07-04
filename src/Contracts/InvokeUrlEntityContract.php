@@ -6,7 +6,7 @@
  * Time: 16:47
  */
 
-namespace XsKit\CallbackClient\Contracts;
+namespace XsKit\Callback\Contracts;
 
 
 interface InvokeUrlEntityContract
