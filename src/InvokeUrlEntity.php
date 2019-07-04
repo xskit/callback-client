@@ -54,10 +54,10 @@ class InvokeUrlEntity implements InvokeUrlContract, AckUrlContract
 
     /**
      * 设置应答回执
-     * @param string $invokeUrl
+     * @param InvokeUrlContract $invokeUrl
      * @return $this
      */
-    public function setAckInvokeUrl($invokeUrl)
+    public function setAckInvokeUrl(InvokeUrlContract $invokeUrl)
     {
         $this->ackInvokeUrl = $invokeUrl;
 
